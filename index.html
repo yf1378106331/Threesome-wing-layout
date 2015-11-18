@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    div {}
+    
+    .header {
+        background: orange;
+        height: 100px;
+    }
+    
+    .article {
+        background: green;
+        height: 300px;
+        overflow: hidden;
+    }
+    
+    .article .left {
+        background: blue;
+        color: white;
+        float: left;
+        width: 150px;
+        height: 16px;
+        margin-left: -100%;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+    }
+    
+    .article .middle {
+        background: brown;
+        height: auto;
+        float: left;
+        width: 100%;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+    }
+    
+    .article .middle .inner {
+        margin-left: 150px;
+        margin-right: 100px;
+    }
+    
+    .article .right {
+        background: #f5f5f5;
+        float: left;
+        width: 100px;
+        margin-bottom: -9999px;
+        padding-bottom: 9999px;
+        margin-left: -100px
+    }
+    
+    .footer {
+        background: yellow;
+        height: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="header">我是头</div>
+    <div class="article">
+        <div class="middle">
+            <div class="inner">我是中间</div>
+        </div>
+        <div class="left">我是左</div>
+        <div class="right">我是右</div>
+    </div>
+    <div class="footer">我是尾部</div>
+</body>
+
+</html>
